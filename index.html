@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baca Komik</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <script src="dummy.js"></script>
+<header>
+    <h1>Baca Komik</h1> <!-- Judul utama halaman -->
+</header>
+
+<!-- Kotak pencarian untuk mencari komik berdasarkan judul -->
+<div class="search-bar">
+    <input type="text" id="search-input" placeholder="Cari komik berdasarkan judul..." oninput="searchComics()">
+</div>
+
+<!-- Bar pilihan genre komik -->
+<div class="genre-bar">
+    <button onclick="filterComics('All')">All</button>
+    <button onclick="filterComics('Action')">Action</button>
+    <button onclick="filterComics('Fantasy')">Fantasy</button>
+    <button onclick="filterComics('Horor')">Horor</button>
+    <button onclick="filterComics('Islamic')">Islamic</button>
+    <button onclick="filterComics('Romance')">Romance</button>
+    <button onclick="filterComics('Comedy')">Comedy</button>
+    <button onclick="filterComics('School')">School</button>
+</div>
+
+<!-- Carousel untuk daftar komik -->
+<div class="carousel-container" id="carousel-container"></div>
+
+<!-- Tombol navigasi carousel -->
+<div class="carousel-controls">
+    <button onclick="scrollCarousel(-300)">&#8592; Geser Kiri</button>
+    <button onclick="scrollCarousel(300)">Geser Kanan &#8594;</button>
+</div>
+
+<!-- Footer dengan Ikon Sosial Media -->
+<footer>
+    <!-- Ikon Sosial Media -->
+    <div class="social-media-icons">
+        <a href="https://facebook.com" target="_blank">🌐 Facebook</a>
+        <a href="https://www.instagram.com/agustriwahyudi195616?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">🌐 Instagram</a>
+        <a href="https://youtube.com" target="_blank">🌐 YouTube</a>
+    </div>
+</footer>
+
+</body>
+</html>
